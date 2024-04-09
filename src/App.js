@@ -7,7 +7,7 @@ import { useKey } from "./useKey";
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
 
-const KEY = "f84fc31d";
+const KEY = "3f70041b";
 
 function NavBar({ children }) {
   return <nav className="nav-bar">{children}</nav>;
