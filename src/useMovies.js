@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+/*jidjig*/
 const KEY = "3f70041b";
 
 export function useMovies(query) {
