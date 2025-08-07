@@ -53,14 +53,7 @@ function NumResults({ movies }) {
 }
 
 function Main({ children }) {
-  return (
-    <>
-      <picture className="mobile">
-        <img src={bgImage} alt="mobile state" />
-      </picture>
-      <main className="main">{children}</main>
-    </>
-  );
+  return <main className="main">{children}</main>;
 }
 
 function Box({ children }) {
