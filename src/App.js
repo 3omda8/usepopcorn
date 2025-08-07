@@ -3,6 +3,7 @@ import StarRating from "./StarRating";
 import { useMovies } from "./useMovies";
 import { useLocalStorageState } from "./useLocalStorageState";
 import { useKey } from "./useKey";
+import bgImage from "./images/PcPage.png";
 
 const average = (arr) =>
   arr.reduce((acc, cur, i, arr) => acc + cur / arr.length, 0);
@@ -52,7 +53,14 @@ function NumResults({ movies }) {
 }
 
 function Main({ children }) {
-  return <main className="main">{children}</main>;
+  return (
+    <>
+      <picture className="mobile">
+        <img src={bgImage} alt="mobile state" />
+      </picture>
+      <main className="main">{children}</main>
+    </>
+  );
 }
 
 function Box({ children }) {
